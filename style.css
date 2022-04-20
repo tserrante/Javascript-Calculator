@@ -1,0 +1,51 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+ ::before,
+ ::after {
+    box-sizing: inherit;
+    font-size: 16px;
+}
+
+body{    
+    background-color: #2d34361c;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+body *+* {
+    margin-top: 1em;
+}
+
+.calc-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.calc-display
+{
+    width: 275px;
+    height: 30px;
+    margin: 5px;
+    padding: 1px;
+    border: 2px solid red;
+}
+
+.calc-input
+{
+    width: 275px;
+    height: 300px;
+    margin: 5px;
+    padding: 1px;
+    border: 2px solid paleturquoise;
+}
