@@ -59,6 +59,9 @@ function solveExpression()
     // store the last number 
     pushCurrentNumber();
 
+    if(expression.length === 1)
+        return expression[0];
+
     // To store the running answer
     let currentResult = 0;
 

@@ -23,29 +23,38 @@ body *+* {
 
 .calc-body
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
-    height: 500px;
-    margin: 20px;
+    width: 18.75em;
+    height: 31.25em;
+    margin: 1.25em;
+    padding: 1em;
     border: 2px solid black;
 }
 
-.calc-display
+.calc-eq,
+.calc-display,
+.calc-input{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.calc-eq
 {
-    width: 275px;
-    height: 30px;
-    margin: 5px;
-    padding: 1px;
+    text-align: end;
+    border: 2px solid green;
+}
+
+
+.calc-display
+{   
+    text-align: end;
     border: 2px solid red;
 }
 
 .calc-input
 {
-    width: 275px;
-    height: 300px;
-    margin: 5px;
-    padding: 1px;
     border: 2px solid paleturquoise;
+}
+
+.calc-eq, .equation{
+    height: 2.375em;
 }
