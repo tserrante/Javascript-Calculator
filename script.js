@@ -1,3 +1,5 @@
+
+
 /*
     Functions
 */
@@ -9,6 +11,15 @@ function resetDisplay()
 {
     displayField.innerText = '0';
 }
+
+/**
+ * Clears display for input
+ */
+function clearDisplay()
+{
+    displayField.innerText = '';
+}
+
 
 /**
  * Clears the expression array
@@ -52,7 +63,7 @@ function pushCurrentNumber()
  /**
   * Converts the current number in displayField to an integer
   * and perform arithmetic stored in expressions
-  * ~~!!Currently ignores order of operations!!~~
+  * ~~!! Ignores order of operations !!~~
   */
 function solveExpression()
 {
@@ -117,7 +128,7 @@ let displayExpression = document.querySelector('.equation');
 let displayField = document.querySelector('.display');
 let displayNumber;  // For storing the current number in displayField
 
-let clearDisplay = document.querySelector('.clear');
+let clearButton = document.querySelector('.clear');
 
 /*
     Event Listeners
@@ -126,7 +137,7 @@ inputArray.forEach(function(btn){
         btn.addEventListener("click", function() 
         {
             if(displayField.innerText === '0')
-                displayField.innerText ='';
+                clearDisplay();
             displayField.innerText += btn.innerText
         });
     });
@@ -144,5 +155,5 @@ equalsOperation.addEventListener('click', () => {
         resetExpression();
     });
 
-clearDisplay.onclick = resetDisplay;
+clearButton.addEventListener('click', () => resetDisplay());
 

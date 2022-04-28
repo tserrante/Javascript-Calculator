@@ -7,25 +7,28 @@
  ::after {
     box-sizing: inherit;
     font-size: 16px;
+    font-family: sans-serif;        
 }
 
-body{    
+body{
     background-color: #2d34361c;
     margin:0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 body *+* {
     margin-top: 1em;
 }
 
+.banner, .calc-body{
+    margin: 1em auto;
+}
+.banner{
+    text-align: center;
+}
 .calc-body
 {
     width: 18.75em;
     height: 31.25em;
-    margin: 1.25em;
     padding: 1em;
     border: 2px solid black;
 }
@@ -50,10 +53,12 @@ body *+* {
     border: 2px solid red;
 }
 
+/*
 .calc-input
 {
     border: 2px solid paleturquoise;
 }
+*/
 
 .calc-eq, .equation{
     height: 2.375em;

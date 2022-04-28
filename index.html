@@ -7,6 +7,7 @@
     </head>
 
     <body>
+        <h1 class="banner">Javascript Calculator</h1>
         <!--The container of the calculator-->
         <div class="calc-body">
             <!--Display for the equation-->
@@ -18,7 +19,9 @@
                 <span class="display">0</span>
             </div>
             <!--Available inputs for the user-->
-            <div class="calc-input">
+            <div class="calc-buttons">
+                <!--Clear calc-display-->
+                <button class="clear">C</button>
                 <!--Integer inputs-->
                 <button class="input" id="1">1</button>
                 <button class="input" id="2">2</button>
@@ -37,8 +40,6 @@
                 <button class="operation" id="divi">/</button>
                 <!--Result of Operation-->
                 <button class="result" id="equal">=</button>
-                <!--Clear calc-display-->
-                <button class="clear">C</button>
             </div>
         </div>
         <script type="text/javascript" src="script.js"></script>
