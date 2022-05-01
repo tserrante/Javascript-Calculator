@@ -31,6 +31,9 @@ body *+* {
     height: 31.25em;
     padding: 1em;
     border: 2px solid black;
+    border-radius: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .calc-eq,
@@ -59,13 +62,14 @@ body *+* {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 1px;
+    gap: 0.125em;
 }
 
 .calc-buttons > * 
 {
+    padding:0;
+    margin:0;
     
-    position: relative;
 }
 
 .calc-eq, .equation{
