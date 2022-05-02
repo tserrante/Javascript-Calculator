@@ -10,9 +10,16 @@
     font-family: sans-serif;        
 }
 
+html{
+    height: 100%;
+}
+
 body{
-    background-color: #fff;
+    /*background-color: rgb(215, 215, 215);*/
+    background-image: linear-gradient(to top,#74ebd5, #acb6e5);
+    background-repeat: no-repeat;
     margin:0;
+    height:100vh;
 }
 
 body *+* {
@@ -22,28 +29,25 @@ body *+* {
 .banner, .calc-body{
     margin: 1em auto;
 }
+
 .banner{
     text-align: center;
 }
 .calc-body
 {
-    width: 18.75em;
-    height: 31.25em;
-    padding: 1em;
-    border: 2px solid black;
+    max-width: 15em;
+    border:0;
     border-radius: 0.75em;
     margin-left: auto;
     margin-right: auto;
-}
-
-.calc-display{
-    padding: 0.5em;
-    margin: 0.5em;
+    overflow: hidden;
 }
 
 .equation{
     height: 0.5em;
     font-size: 0.6em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
 }
 
 .calc-display
@@ -52,35 +56,42 @@ body *+* {
     flex-direction: column;
     text-align: end;
     border:0;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
     background-color: #222222;
     color: #fff;
 }
 
-
 .calc-buttons
 {
+    margin-top: 0;
     display:grid;
+    gap:0.03125em;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.0625em;
+    background-color: #000;
 }
 
 .calc-buttons > * 
 {
-    background-color: inherit;
     padding:0;
     margin:0;
-    border:0.03125em solid black;
+    border:0;
 }
 
-
-.operation, .result
+.input
 {
-    background-color: #eee;
+    background-color: #fff;
+}
+
+.operation
+{
+    background-color: rgb(229, 227, 227);
 }
 
 .result
 {
     grid-column: -2;
     grid-row: 2 / span 4;
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
 }
 
